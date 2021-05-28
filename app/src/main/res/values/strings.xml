@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">DroidCafe</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="intro_text">Postres Droides</string>
+    <string name="donut">Las donas se glasean y se espolvorean con dulces.</string>
+    <string name="ice_cream_sandwiches">Los sándwiches de helado tienen obleas de chocolate y relleno de vainilla.</string>
+    <string name="froyo">FroYo es un yogur helado de autoservicio de primera calidad.</string>
+    <string name="orden_donut">Ordenaste una rosquilla</string>
+    <string name="orden_helado">Ordenaste un sandwich de helado</string>
+    <string name="orden_froyo">Ordenaste un Froyo</string>
+    <string name="formulario_nombre">Nombre: </string>
+    <string name="hit_ingrese_nombre" />
+    <string name="ingrese_nombre_hit">Ingrese su nombre</string>
+    <string name="formulario_apellido">Apellido:</string>
+    <string name="formulario_direccion">Dirección:</string>
+    <string name="direccion_hit">Ingrese una dirección</string>
+    <string name="formulario_telefono">Teléfono:</string>
+    <string name="telefono_hit">"Ingrese su número de teléfono "</string>
+    <string name="Formulario_nota">Nota:</string>
+    <string name="formulario_nota">Ingrese una nota</string>
+    <string name="envio">Elija un método de envío</string>
+    <string name="envio_hoy">Entregar hoy</string>
+    <string name="envio_mañana">Entrega terrestre mañana</string>
+    <string name="envio_recoger">Recoger</string>
+    <string name="contacto_titulo">Contacto</string>
+    <string name="estado_titulo">Estado</string>
+    <string name="orden_titulo">Orden</string>
+    <string name="favoritos_titulo">Favoritos</string>
+    <string name="accion_orden_mensage">Seleccionaste Orden</string>
+    <string name="accion_estado_mensage">Seleccionaste Estado </string>
+    <string name="accion_favoritos_mensage">Seleccionaste Favoritos</string>
+    <string name="accion_contacto_mensage">Seleccionaste Contactos</string>
+</resources>

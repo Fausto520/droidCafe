@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityHeading="false">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FormularioActivity">
+
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#9C27B0"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="409dp"
+            android:layout_height="531dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFormulario"
+            app:layout_constraintVertical_bias="0.2">
+
+            <TextView
+                android:id="@+id/nambre_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/formulario_nombre"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/ingrese_nombre_hit"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/nambre_label"
+                app:layout_constraintStart_toEndOf="@+id/nambre_label" />
+
+            <TextView
+                android:id="@+id/direccion_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/formulario_direccion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nambre_label" />
+
+            <EditText
+                android:id="@+id/direccion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/direccion_hit"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/direccion_label"
+                app:layout_constraintStart_toEndOf="@+id/direccion_label" />
+
+            <TextView
+                android:id="@+id/telefono_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/formulario_telefono"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/direccion_label" />
+
+            <EditText
+                android:id="@+id/telefono_text"
+                android:layout_width="237dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/telefono_hit"
+                android:inputType="phone"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/telefono_label"
+                app:layout_constraintStart_toEndOf="@+id/telefono_label" />
+
+            <TextView
+                android:id="@+id/nota_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/Formulario_nota"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telefono_label" />
+
+            <EditText
+                android:id="@+id/nota_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/formulario_nota"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/nota_label"
+                app:layout_constraintStart_toEndOf="@+id/nota_label" />
+
+            <TextView
+                android:id="@+id/metodoEnvio_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/envio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nota_label" />
+
+            <RadioGroup
+                android:id="@+id/entrega_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/metodoEnvio_label">
+
+                <RadioButton
+                    android:id="@+id/entregar_hoy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:onClick="botonRadio"
+                    android:text="@string/envio_hoy" />
+
+                <RadioButton
+                    android:id="@+id/mañana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="botonRadio"
+                    android:text="@string/envio_mañana" />
+
+                <RadioButton
+                    android:id="@+id/recoger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="botonRadio"
+                    android:text="@string/envio_recoger" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
